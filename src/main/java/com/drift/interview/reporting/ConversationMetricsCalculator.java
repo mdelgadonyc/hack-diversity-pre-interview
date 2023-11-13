@@ -14,15 +14,6 @@ public class ConversationMetricsCalculator {
   ConversationResponseMetric calculateAverageResponseTime(Conversation conversation) {
     List<Message> messages = conversation.getMessages();
 
-    // implement me!
-
-    // [Message{conversationId=2, id=1971156513407663, createdAt=0, authorId=9437, teamMember=false, message=Hello},
-    // Message{conversationId=2, id=1971156513410432, createdAt=2000, authorId=9437, teamMember=false, message=I'd like to know more about Thneeds},
-    // Message{conversationId=2, id=1971156513410826, createdAt=6000, authorId=5, teamMember=true, message=I'm here to help. What's your question?},
-    // Message{conversationId=2, id=1971156513411153, createdAt=6500, authorId=9437, teamMember=false, message=What can it do?},
-    // Message{conversationId=2, id=1971156513411825, createdAt=8500, authorId=5, teamMember=true, message=The real question is what can't it do},
-    // Message{conversationId=2, id=1971156513411826, createdAt=9500, authorId=5, teamMember=true, message=A Thneed can do anything you need!}]
-
     long userTime = 0;
     boolean waiting = true;
 
